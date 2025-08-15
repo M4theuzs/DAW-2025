@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores, Propiedades e valores</title>
+<style>
+    p{
+     color: blue;
+    }
+    .tomate{
+        color: rgb(210, 20, 52);
+    }
+    #titulo {
+        color: green;
+    }
+    input[type="text"]{
+        border: 1px solid red
+    }
+    div > p{
+        color: purple;
+    }
+</style>
+
+</head>
+<body>
+    <h3 class="tomate">Tipos de Seletores</h3>
+    <h4>Seletor por TAG:</h4>
+    <p>Resultado do seletor por TAG</p>
+    
+
+    <h4>Seletor por CLASSE:</h4>
+    <p class="tomate">Resultado do seletor por CLASSE</p>
+
+    <h4>Seletor por ID:</h4>
+    <p id="titulo">Resultado do seletor por ID</p>
+
+    <h4>Seletor por ATRIBUTO:</h4>
+    <input type="text" placeholder="Digite o login">
+    <input type="password" placeholder="Digite a senha">
+
+    <div>
+    <h4>Seletor por PSEUDO-CLASSE:</h4>
+    <p>Resultado do seletor por PSEUDO-CLASSE</p>
+
+    </div>
+
+
+</body>
+</html>
