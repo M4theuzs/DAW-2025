@@ -1,10 +1,13 @@
-import { Header } from './assets/components/laylout/Header'
+import { Footer } from './assets/components/laylout/footer'
+import { Header } from './assets/components/laylout/header'
 
 function App() {
 
   return (
     <>
-    <Header />
+    <Header/>
+    <main></main>
+    <Footer />
     
     </>
   )
