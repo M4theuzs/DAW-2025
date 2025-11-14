@@ -1,23 +1,22 @@
-import { Footer } from './assets/components/laylout/footer'
-import { Header } from './assets/components/laylout/header'
-import { Navbar } from './assets/components/laylout/navbar'
-import { MovieContntent } from './cases/movies/components/movie-content'
-import Highlight from './assets/components/laylout/highlight';
+import { Footer } from "./assets/components/laylout/footer";
+import { Header } from "./assets/components/laylout/header";
+import { Navbar } from "./assets/components/laylout/navbar";
+import { MovieContent } from "./cases/movies/components/movie-content";
+import { MovieContextProvider } from "./cases/movies/context/movie-context";
+import Highlight from "./assets/components/laylout/highlight";
 
-function App() {
+export default function App() {
+    return (
+        <>
+            <Header />
 
-  return (
-    <>
-    <Header/>
-    <main>
-      <Navbar />
-      <Highlight />
-      <MovieContntent/>
-    </main>
-    <Footer />
-    
-    </>
-  )
+            <MovieContextProvider>
+                <Navbar />
+                <Highlight />
+                <MovieContent />
+            </MovieContextProvider>
+
+            <Footer />
+        </>
+    );
 }
-
-export default App
