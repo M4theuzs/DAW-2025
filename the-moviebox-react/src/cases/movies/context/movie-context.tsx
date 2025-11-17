@@ -6,7 +6,7 @@ type MovieContextProps = {
     setSelectedMovie: (movie: MovieDTO) => void;
 };
 
-export const MovieContext = createContext<MovieContextProps | undefined>(undefined);
+const MovieContext = createContext<MovieContextProps | undefined>(undefined);
 
 export function MovieContextProvider({ children }: { children: ReactNode }) {
     const [selectedMovie, setSelectedMovie] = useState<MovieDTO | null>(null);
@@ -17,3 +17,5 @@ export function MovieContextProvider({ children }: { children: ReactNode }) {
         </MovieContext.Provider>
     );
 }
+
+export default MovieContext;
